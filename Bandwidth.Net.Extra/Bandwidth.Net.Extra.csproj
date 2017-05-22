@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Bandwidth.Net" Version="3.0.5"/>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="*"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="*"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="*"/>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="*"/>
+  </ItemGroup>
+</Project>

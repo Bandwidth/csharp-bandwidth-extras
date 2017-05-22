@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bandwidth.Net.Extra", "Bandwidth.Net.Extra\Bandwidth.Net.Extra.csproj", "{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Debug|x64.ActiveCfg = Debug|x64
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Debug|x64.Build.0 = Debug|x64
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Debug|x86.ActiveCfg = Debug|x86
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Debug|x86.Build.0 = Debug|x86
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x64.ActiveCfg = Release|x64
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x64.Build.0 = Release|x64
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x86.ActiveCfg = Release|x86
+		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
