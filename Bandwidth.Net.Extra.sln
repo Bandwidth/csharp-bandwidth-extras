@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bandwidth.Net.Extra", "Bandwidth.Net.Extra\Bandwidth.Net.Extra.csproj", "{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bandwidth.Net.Extra.Test", "Bandwidth.Net.Extra.Test\Bandwidth.Net.Extra.Test.csproj", "{51BCEE22-C953-4A59-BC99-86BE8C8B125D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,5 +29,17 @@ Global
 		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x64.Build.0 = Release|x64
 		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x86.ActiveCfg = Release|x86
 		{E52B0B68-54FB-49B7-BC57-26D2A49AEB14}.Release|x86.Build.0 = Release|x86
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Debug|x64.ActiveCfg = Debug|x64
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Debug|x64.Build.0 = Debug|x64
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Debug|x86.ActiveCfg = Debug|x86
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Debug|x86.Build.0 = Debug|x86
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Release|x64.ActiveCfg = Release|x64
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Release|x64.Build.0 = Release|x64
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Release|x86.ActiveCfg = Release|x86
+		{51BCEE22-C953-4A59-BC99-86BE8C8B125D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
