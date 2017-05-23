@@ -52,11 +52,15 @@ namespace Bandwidth.Net.Extra
       return builder;
     }
 
-    internal static void AddRouteHandler(this IApplicationBuilder builder, string route, Func<CallbackEvent, HttpContext, Task> handler) 
+    private static void AddRouteHandler(this IApplicationBuilder builder, string route, Func<CallbackEvent, HttpContext, Task> handler) 
     {
+      if(handler == null)
+      {
+        return;
+      }
       builder.Map(route, b => {
         b.Use(async (context, next) => {
-          if (context.Request.Method != HttpMethods.Post || (context.Request.ContentType ?? "").Contains("/json"))
+          if (context.Request.Method != HttpMethods.Post || !(context.Request.ContentType ?? "").Contains("/json"))
           {
             await next();
             return;
@@ -81,7 +85,7 @@ namespace Bandwidth.Net.Extra
       });
     }
 
-    internal static Task<T> CachedCall<T>(this IMemoryCache cache, string key, Func<Task<T>> func)
+    private static Task<T> CachedCall<T>(this IMemoryCache cache, string key, Func<Task<T>> func)
     {
       return cache.GetOrCreateAsync(key, e => {
         e.Priority = CacheItemPriority.NeverRemove;
