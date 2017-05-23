@@ -34,10 +34,10 @@ namespace Bandwidth.Net.Extra
             context.Items["PhoneNumber"] = await memoryCache.CachedCall(applicationId, 
               () => phoneNumber.GetOrCreateLocalAsync(availableNumber, applicationId, options.PhoneNumber.LocalNumberQueryForOrder, options.PhoneNumber.Name, context.RequestAborted));
           }
-          else if (options.PhoneNumber.TollFreeNumberQueryForOrder != null)
+          else
           {
             context.Items["PhoneNumber"] = await memoryCache.CachedCall(applicationId, 
-              () => phoneNumber.GetOrCreateTollFreeAsync(availableNumber, applicationId, options.PhoneNumber.TollFreeNumberQueryForOrder, options.PhoneNumber.Name, context.RequestAborted));
+              () => phoneNumber.GetOrCreateTollFreeAsync(availableNumber, applicationId, options.PhoneNumber.Name, context.RequestAborted));
           }
         }
         if (!string.IsNullOrEmpty(options.DomainName))
@@ -182,7 +182,5 @@ namespace Bandwidth.Net.Extra
   {
     public string Name {get; set;}
     public LocalNumberQueryForOrder LocalNumberQueryForOrder {get; set;}
-
-    public TollFreeNumberQueryForOrder TollFreeNumberQueryForOrder {get; set;}
   }
 }

@@ -33,10 +33,9 @@ namespace Bandwidth.Net.Extra
         return result.Number;
       }
 
-      public static async Task<string> CreateTollFreeAsync(this IPhoneNumber phoneNumber, IAvailableNumber availableNumber, string applicationId, TollFreeNumberQueryForOrder query = null, string name = null, CancellationToken? cancellationToken = null) 
+      public static async Task<string> CreateTollFreeAsync(this IPhoneNumber phoneNumber, IAvailableNumber availableNumber, string applicationId, string name = null, CancellationToken? cancellationToken = null) 
       {
-        query = query ?? new TollFreeNumberQuery();
-        query.Quantity = 1;
+        var query = new TollFreeNumberQuery {Quantity = 1};
         var result = (await availableNumber.SearchAndOrderTollFreeAsync(query, cancellationToken)).First();
         await phoneNumber.UpdateAsync(result.Id, new UpdatePhoneNumberData
         {
@@ -55,14 +54,14 @@ namespace Bandwidth.Net.Extra
         }
         return await phoneNumber.CreateLocalAsync(availableNumber, applicationId, query, name, cancellationToken);
       }
-      public static async Task<string> GetOrCreateTollFreeAsync(this IPhoneNumber phoneNumber, IAvailableNumber availableNumber, string applicationId, TollFreeNumberQueryForOrder query = null, string name = null, CancellationToken? cancellationToken = null)
+      public static async Task<string> GetOrCreateTollFreeAsync(this IPhoneNumber phoneNumber, IAvailableNumber availableNumber, string applicationId, string name = null, CancellationToken? cancellationToken = null)
       {
         var existingNumber = phoneNumber.GetByName(applicationId, name);
         if (existingNumber != null) 
         {
           return existingNumber.Number;
         }
-        return await phoneNumber.CreateTollFreeAsync(availableNumber, applicationId, query, name, cancellationToken);
+        return await phoneNumber.CreateTollFreeAsync(availableNumber, applicationId, name, cancellationToken);
       }
     }
 }
