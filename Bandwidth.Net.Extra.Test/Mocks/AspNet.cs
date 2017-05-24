@@ -46,6 +46,7 @@ namespace Bandwidth.Net.Extra.Test.Mocks
   public class MockServiceCollection : IServiceCollection
   {
     private readonly IInvocationContext<IServiceCollection> _context;
+    private readonly List<ServiceDescriptor> _list = new List<ServiceDescriptor>();
 
     public MockServiceCollection(IInvocationContext<IServiceCollection> context)
     {
@@ -54,12 +55,13 @@ namespace Bandwidth.Net.Extra.Test.Mocks
 
     public ServiceDescriptor this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-    public int Count => throw new NotImplementedException();
+    public int Count => _list.Count;
  
     public bool IsReadOnly => throw new NotImplementedException();
 
     public void Add(ServiceDescriptor item)
     {
+        _list.Add(item);
         _context.Invoke(f => f.Add(item));
     }
 
@@ -70,7 +72,7 @@ namespace Bandwidth.Net.Extra.Test.Mocks
 
     public bool Contains(ServiceDescriptor item)
     {
-        throw new NotImplementedException();
+        return _list.Contains(item);
     }
 
     public void CopyTo(ServiceDescriptor[] array, int arrayIndex)
@@ -80,7 +82,7 @@ namespace Bandwidth.Net.Extra.Test.Mocks
 
     public IEnumerator<ServiceDescriptor> GetEnumerator()
     {
-        throw new NotImplementedException();
+        return _list.GetEnumerator();
     }
 
     public int IndexOf(ServiceDescriptor item)
