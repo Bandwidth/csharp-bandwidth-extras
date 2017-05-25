@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 script:
-  - docker run -t -t --rm -v $PWD:/src -w /src microsoft/dotnet:1.1-sdk dotnet restore && cd Bandwidth.Net.Extra.Test && dotnet test
+  - docker run -t -t --rm -v $PWD:/src -w /src "microsoft/dotnet:1.1-sdk dotnet restore && cd Bandwidth.Net.Extra.Test && dotnet test""
 after_success: 
   - bash ./deploy-gh-pages.sh
   - bash ./deploy-nuget.sh
