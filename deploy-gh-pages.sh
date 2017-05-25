@@ -26,7 +26,7 @@ cd ..
 rm -rf .doc/**/* || exit 0
 
 # Run our compile script
-docker run -t -t --rm -v .:/src -w /src tsgkadot/docker-docfx docfx metadata && docfx build
+docker run -t -t --rm -v $PWD:/src -w /src tsgkadot/docker-docfx docfx metadata && docfx build
 
 # Now let's go have some fun with the cloned repo
 cd .doc
