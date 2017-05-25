@@ -4,12 +4,9 @@ set -e # Exit with nonzero exit code if anything fails
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
-function docGen {
-	docker run -t -t --rm -v .:/src -w /src tsgkadot/docker-docfx docfx metadata && docfx build
-}
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "$SOURCE_BRANCH" ]; then
-    echo "Skipping deploy; just doing a build."
+    echo "Skipping deploy of docs; just doing a build."
     exit 0
 fi
 
@@ -29,7 +26,7 @@ cd ..
 rm -rf .doc/**/* || exit 0
 
 # Run our compile script
-docGen
+docker run -t -t --rm -v .:/src -w /src tsgkadot/docker-docfx docfx metadata && docfx build
 
 # Now let's go have some fun with the cloned repo
 cd .doc
