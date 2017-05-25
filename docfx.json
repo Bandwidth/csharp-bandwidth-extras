@@ -37,8 +37,12 @@
     "dest": ".doc",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
+    "globalMetadata": {
+      "_appTitle": "Bandwidth.Net.Extra helpers",
+      "_appFooter": "Copyright © Bandwidth"
+    },
     "template": [
-      "default"
+      "statictoc"
     ],
     "postProcessors": [],
     "noLangKeyword": false
