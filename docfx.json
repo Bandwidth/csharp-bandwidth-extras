@@ -1,0 +1,46 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["**/*.cs"],
+          "exclude": [ "**/bin/**", "**/obj/**" ], 
+          "src": "./Bandwidth.Net.Extra"
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+    ],
+    "overwrite": [
+    ],
+    "dest": ".doc",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "postProcessors": [],
+    "noLangKeyword": false
+  }
+}
