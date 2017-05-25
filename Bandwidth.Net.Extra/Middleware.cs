@@ -111,7 +111,7 @@ namespace Bandwidth.Net.Extra
     ///       app.UseBandwidth(new BandidthOptions
     ///       {
     ///         ApplicationName = "My App",
-    ///         CallCallbackDictionary = new Dictionary<CallbackEventType, Func<CallbackEvent, HttpContext, Task>>
+    ///         CallCallbackDictionary = new Dictionary&lt;CallbackEventType, Func&lt;CallbackEvent, HttpContext, Task&gt;&gt;
     ///         {
     ///           {CallbackEvent.Answer, async (eventData, context)
     ///           {

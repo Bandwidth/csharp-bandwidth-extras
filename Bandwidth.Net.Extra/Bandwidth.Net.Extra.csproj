@@ -3,6 +3,7 @@
   <PropertyGroup>
     <Description>Bandwidth.Net.Extra is set of helpers Bandwidth.Net</Description>
     <VersionPrefix>$(VERSION)</VersionPrefix>
+    <Company>Bandwidth</Company>
     <TargetFrameworks>netstandard1.4</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageTags>bandwidth;catapult</PackageTags>
