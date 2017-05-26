@@ -1,6 +1,8 @@
 sudo: required
 services:
   - docker
+install: 
+  - docker pull microsoft/dotnet:1.1-sdk
 script:
   - docker run -i -t --rm -v $PWD:/src -w /src microsoft/dotnet:1.1-sdk bash ./run-tests.sh
 after_success: 
