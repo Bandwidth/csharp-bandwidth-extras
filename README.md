@@ -50,7 +50,7 @@ public class Startup
         ApplicationName = "My App",
         PhoneNumber = new PhoneNumberOptions
         {
-          LocalNumberQueryForOrder = new LocalNumberQueryForOrder
+          LocalNumberQueryForOrder = new LocalNumberQueryForOrder // leave LocalNumberQueryForOrder with null to allocate toll free number
           {
             AreaCode = "910"
           }
@@ -64,5 +64,22 @@ public class Startup
         }
       });
    }
+}
+```
+
+Now in you contollers you can use any `Bandwidth.Net` interface and `Client` instance via DI. Also `HttpContext.Items["ApplicationId"]` will return application id on Bandwidth server, `HttpContext.Items["PhoneNumber"]` will return allocated phone number.
+
+```csharp
+public class MyController: Controller
+{
+  public MyController(ICall call) // via Dependency Injection
+  {
+
+  }
+
+  public IActionResult MyAction()
+  {
+    return Json(new {PhoneNumber = HttpContext.Items["PhoneNumber"]}); // using allocated phone number
+  }
 }
 ```
