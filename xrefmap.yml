@@ -1,0 +1,456 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Bandwidth.Net.Extra
+  name: Bandwidth.Net.Extra
+  href: api/Bandwidth.Net.Extra.html
+  commentId: N:Bandwidth.Net.Extra
+  fullName: Bandwidth.Net.Extra
+  nameWithType: Bandwidth.Net.Extra
+- uid: Bandwidth.Net.Extra.ApplicationExtensions
+  name: ApplicationExtensions
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html
+  commentId: T:Bandwidth.Net.Extra.ApplicationExtensions
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions
+  nameWithType: ApplicationExtensions
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.CallCallbackPath
+  name: CallCallbackPath
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_CallCallbackPath
+  commentId: F:Bandwidth.Net.Extra.ApplicationExtensions.CallCallbackPath
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.CallCallbackPath
+  nameWithType: ApplicationExtensions.CallCallbackPath
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.GetByName(IApplication,System.String)
+  name: GetByName(IApplication, String)
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_GetByName_IApplication_System_String_
+  commentId: M:Bandwidth.Net.Extra.ApplicationExtensions.GetByName(IApplication,System.String)
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.GetByName(IApplication, System.String)
+  nameWithType: ApplicationExtensions.GetByName(IApplication, String)
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.GetByName*
+  name: GetByName
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_GetByName_
+  commentId: Overload:Bandwidth.Net.Extra.ApplicationExtensions.GetByName
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.GetByName
+  nameWithType: ApplicationExtensions.GetByName
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication,CreateApplicationData,System.String,System.Boolean,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateAsync(IApplication, CreateApplicationData, String, Boolean, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_GetOrCreateAsync_IApplication_CreateApplicationData_System_String_System_Boolean_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication,CreateApplicationData,System.String,System.Boolean,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateAsync(IApplication, CreateApplicationData, String, Boolean, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication, CreateApplicationData, System.String, System.Boolean, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication, CreateApplicationData, System.String, System.Boolean, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: ApplicationExtensions.GetOrCreateAsync(IApplication, CreateApplicationData, String, Boolean, Nullable<CancellationToken>)
+  nameWithType.vb: ApplicationExtensions.GetOrCreateAsync(IApplication, CreateApplicationData, String, Boolean, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication,System.String,System.String,System.Boolean,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateAsync(IApplication, String, String, Boolean, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_GetOrCreateAsync_IApplication_System_String_System_String_System_Boolean_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication,System.String,System.String,System.Boolean,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateAsync(IApplication, String, String, Boolean, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication, System.String, System.String, System.Boolean, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync(IApplication, System.String, System.String, System.Boolean, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: ApplicationExtensions.GetOrCreateAsync(IApplication, String, String, Boolean, Nullable<CancellationToken>)
+  nameWithType.vb: ApplicationExtensions.GetOrCreateAsync(IApplication, String, String, Boolean, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync*
+  name: GetOrCreateAsync
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_GetOrCreateAsync_
+  commentId: Overload:Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.GetOrCreateAsync
+  nameWithType: ApplicationExtensions.GetOrCreateAsync
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.ListAll(IApplication)
+  name: ListAll(IApplication)
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_ListAll_IApplication_
+  commentId: M:Bandwidth.Net.Extra.ApplicationExtensions.ListAll(IApplication)
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.ListAll(IApplication)
+  nameWithType: ApplicationExtensions.ListAll(IApplication)
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.ListAll*
+  name: ListAll
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_ListAll_
+  commentId: Overload:Bandwidth.Net.Extra.ApplicationExtensions.ListAll
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.ListAll
+  nameWithType: ApplicationExtensions.ListAll
+- uid: Bandwidth.Net.Extra.ApplicationExtensions.MessageCallbackPath
+  name: MessageCallbackPath
+  href: api/Bandwidth.Net.Extra.ApplicationExtensions.html#Bandwidth_Net_Extra_ApplicationExtensions_MessageCallbackPath
+  commentId: F:Bandwidth.Net.Extra.ApplicationExtensions.MessageCallbackPath
+  fullName: Bandwidth.Net.Extra.ApplicationExtensions.MessageCallbackPath
+  nameWithType: ApplicationExtensions.MessageCallbackPath
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions
+  name: AspNetCoreExtensions
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html
+  commentId: T:Bandwidth.Net.Extra.AspNetCoreExtensions
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions
+  nameWithType: AspNetCoreExtensions
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData)
+  name: AddBandwidth(IServiceCollection, BandwidthAuthData)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection, Bandwidth.Net.Extra.BandwidthAuthData)
+  nameWithType: AspNetCoreExtensions.AddBandwidth(IServiceCollection, BandwidthAuthData)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth*
+  name: AddBandwidth
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth
+  nameWithType: AspNetCoreExtensions.AddBandwidth
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder,Bandwidth.Net.Extra.BandwidthOptions)
+  name: UseBandwidth(IApplicationBuilder, BandwidthOptions)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_Bandwidth_Net_Extra_BandwidthOptions_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder,Bandwidth.Net.Extra.BandwidthOptions)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder, Bandwidth.Net.Extra.BandwidthOptions)
+  nameWithType: AspNetCoreExtensions.UseBandwidth(IApplicationBuilder, BandwidthOptions)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth*
+  name: UseBandwidth
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth
+  nameWithType: AspNetCoreExtensions.UseBandwidth
+- uid: Bandwidth.Net.Extra.BandwidthAuthData
+  name: BandwidthAuthData
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html
+  commentId: T:Bandwidth.Net.Extra.BandwidthAuthData
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData
+  nameWithType: BandwidthAuthData
+- uid: Bandwidth.Net.Extra.BandwidthAuthData.ApiSecret
+  name: ApiSecret
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html#Bandwidth_Net_Extra_BandwidthAuthData_ApiSecret
+  commentId: P:Bandwidth.Net.Extra.BandwidthAuthData.ApiSecret
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData.ApiSecret
+  nameWithType: BandwidthAuthData.ApiSecret
+- uid: Bandwidth.Net.Extra.BandwidthAuthData.ApiSecret*
+  name: ApiSecret
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html#Bandwidth_Net_Extra_BandwidthAuthData_ApiSecret_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthAuthData.ApiSecret
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData.ApiSecret
+  nameWithType: BandwidthAuthData.ApiSecret
+- uid: Bandwidth.Net.Extra.BandwidthAuthData.ApiToken
+  name: ApiToken
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html#Bandwidth_Net_Extra_BandwidthAuthData_ApiToken
+  commentId: P:Bandwidth.Net.Extra.BandwidthAuthData.ApiToken
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData.ApiToken
+  nameWithType: BandwidthAuthData.ApiToken
+- uid: Bandwidth.Net.Extra.BandwidthAuthData.ApiToken*
+  name: ApiToken
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html#Bandwidth_Net_Extra_BandwidthAuthData_ApiToken_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthAuthData.ApiToken
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData.ApiToken
+  nameWithType: BandwidthAuthData.ApiToken
+- uid: Bandwidth.Net.Extra.BandwidthAuthData.UserId
+  name: UserId
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html#Bandwidth_Net_Extra_BandwidthAuthData_UserId
+  commentId: P:Bandwidth.Net.Extra.BandwidthAuthData.UserId
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData.UserId
+  nameWithType: BandwidthAuthData.UserId
+- uid: Bandwidth.Net.Extra.BandwidthAuthData.UserId*
+  name: UserId
+  href: api/Bandwidth.Net.Extra.BandwidthAuthData.html#Bandwidth_Net_Extra_BandwidthAuthData_UserId_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthAuthData.UserId
+  fullName: Bandwidth.Net.Extra.BandwidthAuthData.UserId
+  nameWithType: BandwidthAuthData.UserId
+- uid: Bandwidth.Net.Extra.BandwidthOptions
+  name: BandwidthOptions
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html
+  commentId: T:Bandwidth.Net.Extra.BandwidthOptions
+  fullName: Bandwidth.Net.Extra.BandwidthOptions
+  nameWithType: BandwidthOptions
+- uid: Bandwidth.Net.Extra.BandwidthOptions.ApplicationName
+  name: ApplicationName
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_ApplicationName
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.ApplicationName
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.ApplicationName
+  nameWithType: BandwidthOptions.ApplicationName
+- uid: Bandwidth.Net.Extra.BandwidthOptions.ApplicationName*
+  name: ApplicationName
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_ApplicationName_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.ApplicationName
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.ApplicationName
+  nameWithType: BandwidthOptions.ApplicationName
+- uid: Bandwidth.Net.Extra.BandwidthOptions.CallCallback
+  name: CallCallback
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_CallCallback
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.CallCallback
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.CallCallback
+  nameWithType: BandwidthOptions.CallCallback
+- uid: Bandwidth.Net.Extra.BandwidthOptions.CallCallback*
+  name: CallCallback
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_CallCallback_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.CallCallback
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.CallCallback
+  nameWithType: BandwidthOptions.CallCallback
+- uid: Bandwidth.Net.Extra.BandwidthOptions.CallCallbackDictionary
+  name: CallCallbackDictionary
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_CallCallbackDictionary
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.CallCallbackDictionary
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.CallCallbackDictionary
+  nameWithType: BandwidthOptions.CallCallbackDictionary
+- uid: Bandwidth.Net.Extra.BandwidthOptions.CallCallbackDictionary*
+  name: CallCallbackDictionary
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_CallCallbackDictionary_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.CallCallbackDictionary
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.CallCallbackDictionary
+  nameWithType: BandwidthOptions.CallCallbackDictionary
+- uid: Bandwidth.Net.Extra.BandwidthOptions.DomainName
+  name: DomainName
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_DomainName
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.DomainName
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.DomainName
+  nameWithType: BandwidthOptions.DomainName
+- uid: Bandwidth.Net.Extra.BandwidthOptions.DomainName*
+  name: DomainName
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_DomainName_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.DomainName
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.DomainName
+  nameWithType: BandwidthOptions.DomainName
+- uid: Bandwidth.Net.Extra.BandwidthOptions.MessageCallback
+  name: MessageCallback
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_MessageCallback
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.MessageCallback
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.MessageCallback
+  nameWithType: BandwidthOptions.MessageCallback
+- uid: Bandwidth.Net.Extra.BandwidthOptions.MessageCallback*
+  name: MessageCallback
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_MessageCallback_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.MessageCallback
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.MessageCallback
+  nameWithType: BandwidthOptions.MessageCallback
+- uid: Bandwidth.Net.Extra.BandwidthOptions.MessageCallbackDictionary
+  name: MessageCallbackDictionary
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_MessageCallbackDictionary
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.MessageCallbackDictionary
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.MessageCallbackDictionary
+  nameWithType: BandwidthOptions.MessageCallbackDictionary
+- uid: Bandwidth.Net.Extra.BandwidthOptions.MessageCallbackDictionary*
+  name: MessageCallbackDictionary
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_MessageCallbackDictionary_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.MessageCallbackDictionary
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.MessageCallbackDictionary
+  nameWithType: BandwidthOptions.MessageCallbackDictionary
+- uid: Bandwidth.Net.Extra.BandwidthOptions.PhoneNumber
+  name: PhoneNumber
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_PhoneNumber
+  commentId: P:Bandwidth.Net.Extra.BandwidthOptions.PhoneNumber
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.PhoneNumber
+  nameWithType: BandwidthOptions.PhoneNumber
+- uid: Bandwidth.Net.Extra.BandwidthOptions.PhoneNumber*
+  name: PhoneNumber
+  href: api/Bandwidth.Net.Extra.BandwidthOptions.html#Bandwidth_Net_Extra_BandwidthOptions_PhoneNumber_
+  commentId: Overload:Bandwidth.Net.Extra.BandwidthOptions.PhoneNumber
+  fullName: Bandwidth.Net.Extra.BandwidthOptions.PhoneNumber
+  nameWithType: BandwidthOptions.PhoneNumber
+- uid: Bandwidth.Net.Extra.DomainExtensions
+  name: DomainExtensions
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html
+  commentId: T:Bandwidth.Net.Extra.DomainExtensions
+  fullName: Bandwidth.Net.Extra.DomainExtensions
+  nameWithType: DomainExtensions
+- uid: Bandwidth.Net.Extra.DomainExtensions.GetByName(IDomain,System.String)
+  name: GetByName(IDomain, String)
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html#Bandwidth_Net_Extra_DomainExtensions_GetByName_IDomain_System_String_
+  commentId: M:Bandwidth.Net.Extra.DomainExtensions.GetByName(IDomain,System.String)
+  fullName: Bandwidth.Net.Extra.DomainExtensions.GetByName(IDomain, System.String)
+  nameWithType: DomainExtensions.GetByName(IDomain, String)
+- uid: Bandwidth.Net.Extra.DomainExtensions.GetByName*
+  name: GetByName
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html#Bandwidth_Net_Extra_DomainExtensions_GetByName_
+  commentId: Overload:Bandwidth.Net.Extra.DomainExtensions.GetByName
+  fullName: Bandwidth.Net.Extra.DomainExtensions.GetByName
+  nameWithType: DomainExtensions.GetByName
+- uid: Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync(IDomain,System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateAsync(IDomain, String, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html#Bandwidth_Net_Extra_DomainExtensions_GetOrCreateAsync_IDomain_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync(IDomain,System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateAsync(IDomain, String, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync(IDomain, System.String, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync(IDomain, System.String, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: DomainExtensions.GetOrCreateAsync(IDomain, String, Nullable<CancellationToken>)
+  nameWithType.vb: DomainExtensions.GetOrCreateAsync(IDomain, String, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync*
+  name: GetOrCreateAsync
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html#Bandwidth_Net_Extra_DomainExtensions_GetOrCreateAsync_
+  commentId: Overload:Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync
+  fullName: Bandwidth.Net.Extra.DomainExtensions.GetOrCreateAsync
+  nameWithType: DomainExtensions.GetOrCreateAsync
+- uid: Bandwidth.Net.Extra.DomainExtensions.ListAll(IDomain)
+  name: ListAll(IDomain)
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html#Bandwidth_Net_Extra_DomainExtensions_ListAll_IDomain_
+  commentId: M:Bandwidth.Net.Extra.DomainExtensions.ListAll(IDomain)
+  fullName: Bandwidth.Net.Extra.DomainExtensions.ListAll(IDomain)
+  nameWithType: DomainExtensions.ListAll(IDomain)
+- uid: Bandwidth.Net.Extra.DomainExtensions.ListAll*
+  name: ListAll
+  href: api/Bandwidth.Net.Extra.DomainExtensions.html#Bandwidth_Net_Extra_DomainExtensions_ListAll_
+  commentId: Overload:Bandwidth.Net.Extra.DomainExtensions.ListAll
+  fullName: Bandwidth.Net.Extra.DomainExtensions.ListAll
+  nameWithType: DomainExtensions.ListAll
+- uid: Bandwidth.Net.Extra.EndpointExtensions
+  name: EndpointExtensions
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html
+  commentId: T:Bandwidth.Net.Extra.EndpointExtensions
+  fullName: Bandwidth.Net.Extra.EndpointExtensions
+  nameWithType: EndpointExtensions
+- uid: Bandwidth.Net.Extra.EndpointExtensions.GetByName(IEndpoint,System.String,System.String)
+  name: GetByName(IEndpoint, String, String)
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_GetByName_IEndpoint_System_String_System_String_
+  commentId: M:Bandwidth.Net.Extra.EndpointExtensions.GetByName(IEndpoint,System.String,System.String)
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.GetByName(IEndpoint, System.String, System.String)
+  nameWithType: EndpointExtensions.GetByName(IEndpoint, String, String)
+- uid: Bandwidth.Net.Extra.EndpointExtensions.GetByName*
+  name: GetByName
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_GetByName_
+  commentId: Overload:Bandwidth.Net.Extra.EndpointExtensions.GetByName
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.GetByName
+  nameWithType: EndpointExtensions.GetByName
+- uid: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint,CreateEndpointData,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateAsync(IEndpoint, CreateEndpointData, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_GetOrCreateAsync_IEndpoint_CreateEndpointData_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint,CreateEndpointData,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateAsync(IEndpoint, CreateEndpointData, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint, CreateEndpointData, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint, CreateEndpointData, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: EndpointExtensions.GetOrCreateAsync(IEndpoint, CreateEndpointData, Nullable<CancellationToken>)
+  nameWithType.vb: EndpointExtensions.GetOrCreateAsync(IEndpoint, CreateEndpointData, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint,System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateAsync(IEndpoint, String, String, String, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_GetOrCreateAsync_IEndpoint_System_String_System_String_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint,System.String,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateAsync(IEndpoint, String, String, String, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint, System.String, System.String, System.String, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync(IEndpoint, System.String, System.String, System.String, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: EndpointExtensions.GetOrCreateAsync(IEndpoint, String, String, String, Nullable<CancellationToken>)
+  nameWithType.vb: EndpointExtensions.GetOrCreateAsync(IEndpoint, String, String, String, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync*
+  name: GetOrCreateAsync
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_GetOrCreateAsync_
+  commentId: Overload:Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.GetOrCreateAsync
+  nameWithType: EndpointExtensions.GetOrCreateAsync
+- uid: Bandwidth.Net.Extra.EndpointExtensions.ListAll(IEndpoint,System.String)
+  name: ListAll(IEndpoint, String)
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_ListAll_IEndpoint_System_String_
+  commentId: M:Bandwidth.Net.Extra.EndpointExtensions.ListAll(IEndpoint,System.String)
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.ListAll(IEndpoint, System.String)
+  nameWithType: EndpointExtensions.ListAll(IEndpoint, String)
+- uid: Bandwidth.Net.Extra.EndpointExtensions.ListAll*
+  name: ListAll
+  href: api/Bandwidth.Net.Extra.EndpointExtensions.html#Bandwidth_Net_Extra_EndpointExtensions_ListAll_
+  commentId: Overload:Bandwidth.Net.Extra.EndpointExtensions.ListAll
+  fullName: Bandwidth.Net.Extra.EndpointExtensions.ListAll
+  nameWithType: EndpointExtensions.ListAll
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions
+  name: PhoneNumberExtensions
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html
+  commentId: T:Bandwidth.Net.Extra.PhoneNumberExtensions
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions
+  nameWithType: PhoneNumberExtensions
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync(IPhoneNumber,IAvailableNumber,System.String,LocalNumberQueryForOrder,System.String,System.Nullable{System.Threading.CancellationToken})
+  name: CreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_CreateLocalAsync_IPhoneNumber_IAvailableNumber_System_String_LocalNumberQueryForOrder_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync(IPhoneNumber,IAvailableNumber,System.String,LocalNumberQueryForOrder,System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: CreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync(IPhoneNumber, IAvailableNumber, System.String, LocalNumberQueryForOrder, System.String, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync(IPhoneNumber, IAvailableNumber, System.String, LocalNumberQueryForOrder, System.String, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: PhoneNumberExtensions.CreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable<CancellationToken>)
+  nameWithType.vb: PhoneNumberExtensions.CreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync*
+  name: CreateLocalAsync
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_CreateLocalAsync_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateLocalAsync
+  nameWithType: PhoneNumberExtensions.CreateLocalAsync
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync(IPhoneNumber,IAvailableNumber,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  name: CreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_CreateTollFreeAsync_IPhoneNumber_IAvailableNumber_System_String_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync(IPhoneNumber,IAvailableNumber,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: CreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync(IPhoneNumber, IAvailableNumber, System.String, System.String, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync(IPhoneNumber, IAvailableNumber, System.String, System.String, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: PhoneNumberExtensions.CreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable<CancellationToken>)
+  nameWithType.vb: PhoneNumberExtensions.CreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync*
+  name: CreateTollFreeAsync
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_CreateTollFreeAsync_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.CreateTollFreeAsync
+  nameWithType: PhoneNumberExtensions.CreateTollFreeAsync
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.GetByName(IPhoneNumber,System.String,System.String)
+  name: GetByName(IPhoneNumber, String, String)
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_GetByName_IPhoneNumber_System_String_System_String_
+  commentId: M:Bandwidth.Net.Extra.PhoneNumberExtensions.GetByName(IPhoneNumber,System.String,System.String)
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.GetByName(IPhoneNumber, System.String, System.String)
+  nameWithType: PhoneNumberExtensions.GetByName(IPhoneNumber, String, String)
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.GetByName*
+  name: GetByName
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_GetByName_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberExtensions.GetByName
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.GetByName
+  nameWithType: PhoneNumberExtensions.GetByName
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync(IPhoneNumber,IAvailableNumber,System.String,LocalNumberQueryForOrder,System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_GetOrCreateLocalAsync_IPhoneNumber_IAvailableNumber_System_String_LocalNumberQueryForOrder_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync(IPhoneNumber,IAvailableNumber,System.String,LocalNumberQueryForOrder,System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync(IPhoneNumber, IAvailableNumber, System.String, LocalNumberQueryForOrder, System.String, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync(IPhoneNumber, IAvailableNumber, System.String, LocalNumberQueryForOrder, System.String, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: PhoneNumberExtensions.GetOrCreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable<CancellationToken>)
+  nameWithType.vb: PhoneNumberExtensions.GetOrCreateLocalAsync(IPhoneNumber, IAvailableNumber, String, LocalNumberQueryForOrder, String, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync*
+  name: GetOrCreateLocalAsync
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_GetOrCreateLocalAsync_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateLocalAsync
+  nameWithType: PhoneNumberExtensions.GetOrCreateLocalAsync
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync(IPhoneNumber,IAvailableNumber,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  name: GetOrCreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable<CancellationToken>)
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_GetOrCreateTollFreeAsync_IPhoneNumber_IAvailableNumber_System_String_System_String_System_Nullable_System_Threading_CancellationToken__
+  commentId: M:Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync(IPhoneNumber,IAvailableNumber,System.String,System.String,System.Nullable{System.Threading.CancellationToken})
+  name.vb: GetOrCreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable(Of CancellationToken))
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync(IPhoneNumber, IAvailableNumber, System.String, System.String, System.Nullable<System.Threading.CancellationToken>)
+  fullName.vb: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync(IPhoneNumber, IAvailableNumber, System.String, System.String, System.Nullable(Of System.Threading.CancellationToken))
+  nameWithType: PhoneNumberExtensions.GetOrCreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable<CancellationToken>)
+  nameWithType.vb: PhoneNumberExtensions.GetOrCreateTollFreeAsync(IPhoneNumber, IAvailableNumber, String, String, Nullable(Of CancellationToken))
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync*
+  name: GetOrCreateTollFreeAsync
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_GetOrCreateTollFreeAsync_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.GetOrCreateTollFreeAsync
+  nameWithType: PhoneNumberExtensions.GetOrCreateTollFreeAsync
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.ListAllForApplication(IPhoneNumber,System.String)
+  name: ListAllForApplication(IPhoneNumber, String)
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_ListAllForApplication_IPhoneNumber_System_String_
+  commentId: M:Bandwidth.Net.Extra.PhoneNumberExtensions.ListAllForApplication(IPhoneNumber,System.String)
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.ListAllForApplication(IPhoneNumber, System.String)
+  nameWithType: PhoneNumberExtensions.ListAllForApplication(IPhoneNumber, String)
+- uid: Bandwidth.Net.Extra.PhoneNumberExtensions.ListAllForApplication*
+  name: ListAllForApplication
+  href: api/Bandwidth.Net.Extra.PhoneNumberExtensions.html#Bandwidth_Net_Extra_PhoneNumberExtensions_ListAllForApplication_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberExtensions.ListAllForApplication
+  fullName: Bandwidth.Net.Extra.PhoneNumberExtensions.ListAllForApplication
+  nameWithType: PhoneNumberExtensions.ListAllForApplication
+- uid: Bandwidth.Net.Extra.PhoneNumberOptions
+  name: PhoneNumberOptions
+  href: api/Bandwidth.Net.Extra.PhoneNumberOptions.html
+  commentId: T:Bandwidth.Net.Extra.PhoneNumberOptions
+  fullName: Bandwidth.Net.Extra.PhoneNumberOptions
+  nameWithType: PhoneNumberOptions
+- uid: Bandwidth.Net.Extra.PhoneNumberOptions.LocalNumberQueryForOrder
+  name: LocalNumberQueryForOrder
+  href: api/Bandwidth.Net.Extra.PhoneNumberOptions.html#Bandwidth_Net_Extra_PhoneNumberOptions_LocalNumberQueryForOrder
+  commentId: P:Bandwidth.Net.Extra.PhoneNumberOptions.LocalNumberQueryForOrder
+  fullName: Bandwidth.Net.Extra.PhoneNumberOptions.LocalNumberQueryForOrder
+  nameWithType: PhoneNumberOptions.LocalNumberQueryForOrder
+- uid: Bandwidth.Net.Extra.PhoneNumberOptions.LocalNumberQueryForOrder*
+  name: LocalNumberQueryForOrder
+  href: api/Bandwidth.Net.Extra.PhoneNumberOptions.html#Bandwidth_Net_Extra_PhoneNumberOptions_LocalNumberQueryForOrder_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberOptions.LocalNumberQueryForOrder
+  fullName: Bandwidth.Net.Extra.PhoneNumberOptions.LocalNumberQueryForOrder
+  nameWithType: PhoneNumberOptions.LocalNumberQueryForOrder
+- uid: Bandwidth.Net.Extra.PhoneNumberOptions.Name
+  name: Name
+  href: api/Bandwidth.Net.Extra.PhoneNumberOptions.html#Bandwidth_Net_Extra_PhoneNumberOptions_Name
+  commentId: P:Bandwidth.Net.Extra.PhoneNumberOptions.Name
+  fullName: Bandwidth.Net.Extra.PhoneNumberOptions.Name
+  nameWithType: PhoneNumberOptions.Name
+- uid: Bandwidth.Net.Extra.PhoneNumberOptions.Name*
+  name: Name
+  href: api/Bandwidth.Net.Extra.PhoneNumberOptions.html#Bandwidth_Net_Extra_PhoneNumberOptions_Name_
+  commentId: Overload:Bandwidth.Net.Extra.PhoneNumberOptions.Name
+  fullName: Bandwidth.Net.Extra.PhoneNumberOptions.Name
+  nameWithType: PhoneNumberOptions.Name

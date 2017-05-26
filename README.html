@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>csharp-bandwidth-extras | Bandwidth.Net.Extra helpers </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="csharp-bandwidth-extras | Bandwidth.Net.Extra helpers ">
+    <meta name="generator" content="docfx 2.15.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="">
+                    <a href="api/index.html" title="Api Documentation">Api Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="csharp-bandwidth-extras">csharp-bandwidth-extras</h1>
+              
+<p><a href="https://badge.fury.io/nu/Bandwidth.Net.Extra"><img src="https://badge.fury.io/nu/Bandwidth.Net.Extra.svg" alt="nuget version"></a>
+<a href="https://travis-ci.org/Bandwidth/csharp-bandwidth-extras"><img src="https://travis-ci.org/Bandwidth/csharp-bandwidth-extras.svg?branch=master" alt="Build Status"></a></p>
+<p>Helper functions and ASP.Net Core middleware for Bandwidth.Net. Read more documentation <a href="http://dev.bandwidth.com/csharp-bandwidth-extras/api/index.html">here</a>.</p>
+<h2 id="install">Install</h2>
+<p>Run</p>
+<pre><code>dotnet add package Bandwidth.Net.Extra
+</code></pre><h2 id="examples">Examples</h2>
+<h3 id="helpers">Helpers</h3>
+<pre><code class="lang-csharp">using Bandwidth.Netx.Extra;
+
+var appId = await client.Application.GetOrCreateAsync(&#39;My app&#39;, &#39;my.domain.com&#39;); // It will return exisitng application Id or create it otherwise
+
+var number = await client.PhoneNumber.GetOrCreateAsync(client.AvailableNumber, appId, &#39;Support&#39;, new LocalNumberQueryForOrder{AreaCode = &quot;910&quot;}); // It will reserve a linked to this app phone number and assign name to it. If number with such name already exists it returns it.
+</code></pre><h3 id="middleware">Middleware</h3>
+<h4 id="koa">Koa</h4>
+<pre><code class="lang-csharp">public class Startup
+{
+   public void ConfigureServices(IServiceCollection services)
+   {
+      // Register Banwidth API services. They are used by middleware too.
+      services.AddBandwidth(new BandwidthAuthData
+      {
+        UserId = &quot;userId&quot;,
+        ApiToken = &quot;apiToken&quot;,
+        ApiSecret = &quot;apiSecret&quot;
+      });
+   }
+   public void Configure(IApplicationBuilder app)
+   {
+      // Using a middleware
+      app.UseBandwidth(new BandidthOptions
+      {
+        ApplicationName = &quot;My App&quot;,
+        PhoneNumber = new PhoneNumberOptions
+        {
+          LocalNumberQueryForOrder = new LocalNumberQueryForOrder // leave LocalNumberQueryForOrder with null to allocate toll free number
+          {
+            AreaCode = &quot;910&quot;
+          }
+        },
+        CallCallback = async (eventData, context) // as alternative you can use CallCallbackDictionary to handle only specific events
+        {
+          // handle call events here (including sip events too)
+          if(eventData.EventType == CallbackEventType.Answer &amp;&amp; context.Items[&quot;PhoneNumber&quot;] == eventData.To){
+            Debug.WriteLine(&#39;Answered&#39;);
+          }
+        }
+      });
+   }
+}
+</code></pre><p>Now in you contollers you can use any <code>Bandwidth.Net</code> interface and <code>Client</code> instance via DI. Also <code>HttpContext.Items[&quot;ApplicationId&quot;]</code> will return application id on Bandwidth server, <code>HttpContext.Items[&quot;PhoneNumber&quot;]</code> will return allocated phone number.</p>
+<pre><code class="lang-csharp">public class MyController: Controller
+{
+  public MyController(ICall call) // via Dependency Injection
+  {
+
+  }
+
+  public IActionResult MyAction()
+  {
+    return Json(new {PhoneNumber = HttpContext.Items[&quot;PhoneNumber&quot;]}); // using allocated phone number
+  }
+}
+</code></pre>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © Bandwidth
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
