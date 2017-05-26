@@ -22,7 +22,7 @@ using Bandwidth.Netx.Extra;
 
 var appId = await client.Application.GetOrCreateAsync('My app', 'my.domain.com'); // It will return exisitng application Id or create it otherwise
 
-var number = await client.PhoneNumber.GetOrCreateAsync(client.AvailbaleNumber, appId, 'Support', new LocalNumberQueryForOrder{AreaCode = "910"}); // It will reserve a linked to this app phone number and assign name to it. If number with such name already exists it returns it.
+var number = await client.PhoneNumber.GetOrCreateAsync(client.AvailableNumber, appId, 'Support', new LocalNumberQueryForOrder{AreaCode = "910"}); // It will reserve a linked to this app phone number and assign name to it. If number with such name already exists it returns it.
 ```
 
 ### Middleware
