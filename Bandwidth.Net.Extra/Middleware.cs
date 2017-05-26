@@ -25,7 +25,7 @@ namespace Bandwidth.Net.Extra
     /// <param name="options">Options of middleware</param>
     /// <returns>IApplicationBuilder instance</returns>
     /// <remarks>
-    /// It links your web application with application on Bandwidth server. It defines routes for event callbacks and allows to add custom handlers easy.!--
+    /// It links your web application with application on Bandwidth server. It defines routes for event callbacks and allows to add custom handlers easy.
     /// Also it allocate a phone number which events will be handled by this application. It receives domain Id (and creates it if need) for your SIP domain if need.
     /// 
     /// Don't forget run <code>services.AddBandwidth(new BandwidthAuthData(...))</code> before use this middleware.
@@ -56,8 +56,8 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// Now you can use in any route handler: 
-    /// <pre>Context.items["PhoneNumber"]</pre> - allocated phone number which events will be handled by this app,
-    /// <pre>Context.items["ApplicationId"]</pre> - application Id of Bandwidth application.
+    /// Context.items["PhoneNumber"] - allocated phone number which events will be handled by this app,
+    /// Context.items["ApplicationId"] - application Id of Bandwidth application.
     /// </example>
     /// <example>
     /// Demo with SIP domain
@@ -97,9 +97,9 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// Now you can use in any route handler: 
-    /// <pre>Context.items["PhoneNumber"]</pre> - allocated phone number which events will be handled by this app
-    /// <pre>Context.items["ApplicationId"]</pre> - application Id of Bandwidth application
-    /// <pre>Context.items["DomainId"]</pre> - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.
+    /// Context.items["PhoneNumber"] - allocated phone number which events will be handled by this app
+    /// Context.items["ApplicationId"] - application Id of Bandwidth application
+    /// Context.items["DomainId"] - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.
     /// </example>
     /// <example>
     /// Event handler as dictionary
