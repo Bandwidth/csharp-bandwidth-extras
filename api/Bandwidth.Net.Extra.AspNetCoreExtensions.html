@@ -280,7 +280,7 @@
                 </tbody>
               </table>
               <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_Bandwidth_Net_Extra_BandwidthOptions__remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>It links your web application with application on Bandwidth server. It defines routes for event callbacks and allows to add custom handlers easy.!--
+              <div class="markdown level1 remarks"><p>It links your web application with application on Bandwidth server. It defines routes for event callbacks and allows to add custom handlers easy.
 Also it allocate a phone number which events will be handled by this application. It receives domain Id (and creates it if need) for your SIP domain if need.</p>
 <p>Don&#39;t forget run <pre><code>services.AddBandwidth(new BandwidthAuthData(...))</code></pre> before use this middleware.</p>
 </div>
@@ -308,8 +308,8 @@ Also it allocate a phone number which events will be handled by this application
    }
 }</code></pre>
 Now you can use in any route handler: 
-<pre>Context.items["PhoneNumber"]</pre> - allocated phone number which events will be handled by this app,
-<pre>Context.items["ApplicationId"]</pre> - application Id of Bandwidth application.</p>
+Context.items[&quot;PhoneNumber&quot;] - allocated phone number which events will be handled by this app,
+Context.items[&quot;ApplicationId&quot;] - application Id of Bandwidth application.</p>
 
               <p>Demo with SIP domain
 <pre><code>public class Startup
@@ -346,9 +346,9 @@ Now you can use in any route handler:
    }
 }</code></pre>
 Now you can use in any route handler: 
-<pre>Context.items["PhoneNumber"]</pre> - allocated phone number which events will be handled by this app
-<pre>Context.items["ApplicationId"]</pre> - application Id of Bandwidth application
-<pre>Context.items["DomainId"]</pre> - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.</p>
+Context.items[&quot;PhoneNumber&quot;] - allocated phone number which events will be handled by this app
+Context.items[&quot;ApplicationId&quot;] - application Id of Bandwidth application
+Context.items[&quot;DomainId&quot;] - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.</p>
 
               <p>Event handler as dictionary
 <pre><code>public class Startup
