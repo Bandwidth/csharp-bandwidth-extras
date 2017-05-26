@@ -56,8 +56,8 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// Now you can use in any route handler: 
-    /// <code>Context.items["PhoneNumber"]</code> - allocated phone number which events will be handled by this app
-    /// <code>Context.items["ApplicationId"]</code> - application Id of Bandwidth application
+    /// <pre>Context.items["PhoneNumber"]</pre> - allocated phone number which events will be handled by this app,
+    /// <pre>Context.items["ApplicationId"]</pre> - application Id of Bandwidth application.
     /// </example>
     /// <example>
     /// Demo with SIP domain
@@ -97,9 +97,9 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// Now you can use in any route handler: 
-    /// <code>Context.items["PhoneNumber"]</code> - allocated phone number which events will be handled by this app
-    /// <code>Context.items["ApplicationId"]</code> - application Id of Bandwidth application
-    /// <code>Context.items["DomainId"]</code> - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.
+    /// <pre>Context.items["PhoneNumber"]</pre> - allocated phone number which events will be handled by this app
+    /// <pre>Context.items["ApplicationId"]</pre> - application Id of Bandwidth application
+    /// <pre>Context.items["DomainId"]</pre> - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.
     /// </example>
     /// <example>
     /// Event handler as dictionary
