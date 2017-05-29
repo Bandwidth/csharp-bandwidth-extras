@@ -135,6 +135,7 @@ namespace Bandwidth.Net.Extra
         var applicationId = await memoryCache.CachedCall($"{options.ApplicationName}##{context.Request.Host.Host}", 
           () => application.GetOrCreateAsync(options.ApplicationName, context.Request.Host.Host, context.Request.IsHttps, context.RequestAborted));
         context.Items["ApplicationId"] = applicationId;
+        var providedKeys = new List<string>(new[] {"ApplicationId"});
         if (options.PhoneNumber != null)
         {
           if (options.PhoneNumber.LocalNumberQueryForOrder != null)
@@ -147,12 +148,15 @@ namespace Bandwidth.Net.Extra
             context.Items["PhoneNumber"] = await memoryCache.CachedCall(applicationId, 
               () => phoneNumber.GetOrCreateTollFreeAsync(availableNumber, applicationId, options.PhoneNumber.Name, context.RequestAborted));
           }
+          providedKeys.Add("PhoneNumber");
         }
         if (!string.IsNullOrEmpty(options.DomainName))
         {
           context.Items["DomainId"] = await memoryCache.CachedCall(options.DomainName, 
             () => domain.GetOrCreateAsync(options.DomainName));
+          providedKeys.Add("DomainId");  
         }
+        context.Items["Bandwidth.Net.Extra.ProvidedKeys"] = providedKeys.ToArray();
         await next();
       });
       builder.AddRouteHandler(ApplicationExtensions.CallCallbackPath, options.CallCallback);
@@ -228,14 +232,14 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// </example>
-    public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData, Action<object> registerSingleton = null)
+    public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData, Action<Type, object> registerSingleton = null)
     {
       var client = new Client(authData.UserId, authData.ApiToken, authData.ApiSecret);
-      void register(object instance) 
+      void register<T>(T instance) where T : class
       {
-        services.AddSingleton(instance); 
+        services.AddSingleton<T>(instance); 
         if (registerSingleton != null) {
-          registerSingleton(instance);
+          registerSingleton(typeof(T), instance);
         }
       };
       register(client);
