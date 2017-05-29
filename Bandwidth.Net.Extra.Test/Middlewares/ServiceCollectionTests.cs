@@ -44,7 +44,7 @@ namespace Bandwidth.Net.Extra.Test.Middlewares
           UserId = "userId",
           ApiToken = "apiToken",
           ApiSecret = "apiSecret"
-        }, i => list.Add(i) );
+        }, (type, i) => list.Add(i) );
         Assert.Equal(17, list.Count);
       }
 
