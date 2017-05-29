@@ -89,12 +89,6 @@
                             <a href="Bandwidth.Net.Extra.AspNetCoreExtensions.html" title="AspNetCoreExtensions">AspNetCoreExtensions</a>
                           </li>
                           <li class="">
-                            <a href="Bandwidth.Net.Extra.BandwidthAuthData.html" title="BandwidthAuthData">BandwidthAuthData</a>
-                          </li>
-                          <li class="">
-                            <a href="Bandwidth.Net.Extra.BandwidthOptions.html" title="BandwidthOptions">BandwidthOptions</a>
-                          </li>
-                          <li class="">
                             <a href="Bandwidth.Net.Extra.DomainExtensions.html" title="DomainExtensions">DomainExtensions</a>
                           </li>
                           <li class="">
@@ -102,9 +96,6 @@
                           </li>
                           <li class="">
                             <a href="Bandwidth.Net.Extra.PhoneNumberExtensions.html" title="PhoneNumberExtensions">PhoneNumberExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="Bandwidth.Net.Extra.PhoneNumberOptions.html" title="PhoneNumberOptions">PhoneNumberOptions</a>
                           </li>
                         </ul>  </li>
                   </ul>        </div>
@@ -162,13 +153,13 @@
               
               
               <a id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth*"></a>
-              <h4 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object__" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData,Action{System.Object})">AddBandwidth(IServiceCollection, BandwidthAuthData, Action&lt;Object&gt;)</h4>
+              <h4 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_BandwidthAuthData_Action_Type_System_Object__" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,BandwidthAuthData,Action{Type,System.Object})">AddBandwidth(IServiceCollection, BandwidthAuthData, Action&lt;Type, Object&gt;)</h4>
               <div class="markdown level1 summary"><p>DI helper for Bandwidth</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData, Action&lt;object&gt; registerSingleton = null)</code></pre>
+                <pre><code class="lang-csharp hljs">public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData, Action&lt;Type, object&gt; registerSingleton = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -187,13 +178,13 @@
 </td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="Bandwidth.Net.Extra.BandwidthAuthData.html">BandwidthAuthData</a></td>
+                    <td><span class="xref">BandwidthAuthData</span></td>
                     <td><span class="parametername">authData</span></td>
                     <td><p>Banswisth auth data</p>
 </td>
                   </tr>
                   <tr>
-                    <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="xref">Action</span>&lt;<span class="xref">Type</span>, <span class="xref">System.Object</span>&gt;</td>
                     <td><span class="parametername">registerSingleton</span></td>
                     <td><p>Optional handler for registers Banwidths services (Usefull if you are use IoC containers, etc)</p>
 </td>
@@ -216,10 +207,10 @@
                   </tr>
                 </tbody>
               </table>
-              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object___remarks">Remarks</h5>
+              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_BandwidthAuthData_Action_Type_System_Object___remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>It registers interfaces and Client instance of Bandwidth.Net into service collection. After that you can use any such type via DI in your controllers.</p>
 </div>
-              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object___examples">Examples</h5>
+              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_BandwidthAuthData_Action_Type_System_Object___examples">Examples</h5>
               <p>Event handler as dictionary
 <pre><code>public class Startup
 {
@@ -237,7 +228,7 @@
               
               
               <a id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth*"></a>
-              <h4 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_Bandwidth_Net_Extra_BandwidthOptions_" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder,Bandwidth.Net.Extra.BandwidthOptions)">UseBandwidth(IApplicationBuilder, BandwidthOptions)</h4>
+              <h4 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_BandwidthOptions_" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder,BandwidthOptions)">UseBandwidth(IApplicationBuilder, BandwidthOptions)</h4>
               <div class="markdown level1 summary"><p>Bandwidth middleware for ASP.Net Core</p>
 </div>
               <div class="markdown level1 conceptual"></div>
@@ -262,7 +253,7 @@
 </td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="Bandwidth.Net.Extra.BandwidthOptions.html">BandwidthOptions</a></td>
+                    <td><span class="xref">BandwidthOptions</span></td>
                     <td><span class="parametername">options</span></td>
                     <td><p>Options of middleware</p>
 </td>
@@ -285,12 +276,12 @@
                   </tr>
                 </tbody>
               </table>
-              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_Bandwidth_Net_Extra_BandwidthOptions__remarks">Remarks</h5>
+              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_BandwidthOptions__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>It links your web application with application on Bandwidth server. It defines routes for event callbacks and allows to add custom handlers easy.
 Also it allocate a phone number which events will be handled by this application. It receives domain Id (and creates it if need) for your SIP domain if need.</p>
 <p>Don&#39;t forget run <pre><code>services.AddBandwidth(new BandwidthAuthData(...))</code></pre> before use this middleware.</p>
 </div>
-              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_Bandwidth_Net_Extra_BandwidthOptions__examples">Examples</h5>
+              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_BandwidthOptions__examples">Examples</h5>
               <p>Simple demo
 <pre><code>public class Startup
 {
