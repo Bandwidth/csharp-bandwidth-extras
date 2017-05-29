@@ -79,12 +79,15 @@ references:
   commentId: T:Bandwidth.Net.Extra.AspNetCoreExtensions
   fullName: Bandwidth.Net.Extra.AspNetCoreExtensions
   nameWithType: AspNetCoreExtensions
-- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData)
-  name: AddBandwidth(IServiceCollection, BandwidthAuthData)
-  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_
-  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData)
-  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection, Bandwidth.Net.Extra.BandwidthAuthData)
-  nameWithType: AspNetCoreExtensions.AddBandwidth(IServiceCollection, BandwidthAuthData)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData,Action{System.Object})
+  name: AddBandwidth(IServiceCollection, BandwidthAuthData, Action<Object>)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object__
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData,Action{System.Object})
+  name.vb: AddBandwidth(IServiceCollection, BandwidthAuthData, Action(Of Object))
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection, Bandwidth.Net.Extra.BandwidthAuthData, Action<System.Object>)
+  fullName.vb: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection, Bandwidth.Net.Extra.BandwidthAuthData, Action(Of System.Object))
+  nameWithType: AspNetCoreExtensions.AddBandwidth(IServiceCollection, BandwidthAuthData, Action<Object>)
+  nameWithType.vb: AspNetCoreExtensions.AddBandwidth(IServiceCollection, BandwidthAuthData, Action(Of Object))
 - uid: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth*
   name: AddBandwidth
   href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_

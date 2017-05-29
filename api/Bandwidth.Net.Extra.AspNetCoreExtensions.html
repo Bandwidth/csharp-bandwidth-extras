@@ -162,13 +162,13 @@
               
               
               <a id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth*"></a>
-              <h4 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData)">AddBandwidth(IServiceCollection, BandwidthAuthData)</h4>
+              <h4 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object__" data-uid="Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth(IServiceCollection,Bandwidth.Net.Extra.BandwidthAuthData,Action{System.Object})">AddBandwidth(IServiceCollection, BandwidthAuthData, Action&lt;Object&gt;)</h4>
               <div class="markdown level1 summary"><p>DI helper for Bandwidth</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData)</code></pre>
+                <pre><code class="lang-csharp hljs">public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData, Action&lt;object&gt; registerSingleton = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -192,6 +192,12 @@
                     <td><p>Banswisth auth data</p>
 </td>
                   </tr>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">registerSingleton</span></td>
+                    <td><p>Optional handler for registers Banwidths services (Usefull if you are use IoC containers, etc)</p>
+</td>
+                  </tr>
                 </tbody>
               </table>
               <h5 class="returns">Returns</h5>
@@ -210,10 +216,10 @@
                   </tr>
                 </tbody>
               </table>
-              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData__remarks">Remarks</h5>
+              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object___remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>It registers interfaces and Client instance of Bandwidth.Net into service collection. After that you can use any such type via DI in your controllers.</p>
 </div>
-              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData__examples">Examples</h5>
+              <h5 id="Bandwidth_Net_Extra_AspNetCoreExtensions_AddBandwidth_IServiceCollection_Bandwidth_Net_Extra_BandwidthAuthData_Action_System_Object___examples">Examples</h5>
               <p>Event handler as dictionary
 <pre><code>public class Startup
 {
