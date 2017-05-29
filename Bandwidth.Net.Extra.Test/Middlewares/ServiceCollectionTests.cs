@@ -32,6 +32,22 @@ namespace Bandwidth.Net.Extra.Test.Middlewares
         Assert.NotNull(serviceCollection.FirstOrDefault(d => d.ServiceType == typeof(IMemoryCache)));
       }
 
+      [Fact]
+      public void AddBandwidthTest2()
+      {
+        var context = new MockContext<IServiceCollection>();
+        context.Arrange(s=>s.Add(The<ServiceDescriptor>.IsAnyValue));
+        var serviceCollection = new MockServiceCollection(context);
+        var list = new List<object>();
+        serviceCollection.AddBandwidth(new BandwidthAuthData
+        {
+          UserId = "userId",
+          ApiToken = "apiToken",
+          ApiSecret = "apiSecret"
+        }, i => list.Add(i) );
+        Assert.Equal(17, list.Count);
+      }
+
       private static readonly Type[] RegisteredTypes = new [] 
       {
         typeof(Client), 
