@@ -206,6 +206,7 @@ namespace Bandwidth.Net.Extra
     /// </summary>
     /// <param name="services">IServiceCollection instance</param>
     /// <param name="authData">Banswisth auth data</param>
+    /// <param name="registerSingleton">Optional handler for registers Banwidths services (Usefull if you are use IoC containers, etc)</param>
     /// <returns>IServiceCollection instance</returns>
     /// <remarks>
     /// It registers interfaces and Client instance of Bandwidth.Net into service collection. After that you can use any such type via DI in your controllers.
@@ -227,26 +228,33 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// </example>
-    public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData)
+    public static IServiceCollection AddBandwidth(this IServiceCollection services, BandwidthAuthData authData, Action<object> registerSingleton = null)
     {
       var client = new Client(authData.UserId, authData.ApiToken, authData.ApiSecret);
-      services.AddSingleton(client);
-      services.AddSingleton(client.Account);
-      services.AddSingleton(client.Application);
-      services.AddSingleton(client.AvailableNumber);
-      services.AddSingleton(client.Bridge);
-      services.AddSingleton(client.Call);
-      services.AddSingleton(client.Conference);
-      services.AddSingleton(client.Domain);
-      services.AddSingleton(client.Endpoint);
-      services.AddSingleton(client.Error);
-      services.AddSingleton(client.Media);
-      services.AddSingleton(client.Message);
-      services.AddSingleton(client.NumberInfo);
-      services.AddSingleton(client.PhoneNumber);
-      services.AddSingleton(client.Recording);
-      services.AddSingleton(client.Transcription);
-      services.AddSingleton(client.V2.Message);
+      void register(object instance) 
+      {
+        services.AddSingleton(instance); 
+        if (registerSingleton != null) {
+          registerSingleton(instance);
+        }
+      };
+      register(client);
+      register(client.Account);
+      register(client.Application);
+      register(client.AvailableNumber);
+      register(client.Bridge);
+      register(client.Call);
+      register(client.Conference);
+      register(client.Domain);
+      register(client.Endpoint);
+      register(client.Error);
+      register(client.Media);
+      register(client.Message);
+      register(client.NumberInfo);
+      register(client.PhoneNumber);
+      register(client.Recording);
+      register(client.Transcription);
+      register(client.V2.Message);
       services.AddMemoryCache();
       return services;
     }
