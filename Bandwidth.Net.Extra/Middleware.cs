@@ -133,7 +133,7 @@ namespace Bandwidth.Net.Extra
         var domain = context.RequestServices.GetService<IDomain>();
         
         var applicationId = await memoryCache.CachedCall($"{options.ApplicationName}##{context.Request.Host.Host}", 
-          () => application.GetOrCreateAsync(options.ApplicationName, context.Request.Host.Host, context.Request.IsHttps, context.RequestAborted));
+          () => application.GetOrCreateAsync(options.ApplicationName, context.Request.Host.Host, options.UseHttpsForCallbacks, context.RequestAborted));
         context.Items["ApplicationId"] = applicationId;
         var providedKeys = new List<string>(new[] {"ApplicationId"});
         if (options.PhoneNumber != null)
@@ -305,6 +305,12 @@ namespace Bandwidth.Net.Extra
     /// </summary>
     /// <returns></returns>
     public string DomainName {get; set;}
+
+    /// <summary>
+    /// Use or not https for callbacks routes
+    /// </summary>
+    /// <returns></returns>
+    public bool UseHttpsForCallbacks {get; set;} = true;
 
     /// <summary>
     /// Handler of call callback events
