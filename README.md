@@ -67,7 +67,7 @@ public class Startup
 }
 ```
 
-Now in you contollers you can use any `Bandwidth.Net` interface and `Client` instance via DI. Also `HttpContext.Items["ApplicationId"]` will return application id on Bandwidth server, `HttpContext.Items["PhoneNumber"]` will return allocated phone number.
+Now in you contollers you can use any `Bandwidth.Net` interface and `Client` instance via DI. Also `HttpContext.Items["ApplicationId"]` or `HttpContext.GetApplicationId()` will return application id on Bandwidth server, `HttpContext.Items["PhoneNumber"]` or `HttpContext.GetPhoneNumber()` will return allocated phone number.
 
 ```csharp
 public class MyController: Controller
@@ -79,7 +79,7 @@ public class MyController: Controller
 
   public IActionResult MyAction()
   {
-    return Json(new {PhoneNumber = HttpContext.Items["PhoneNumber"]}); // using allocated phone number
+    return Json(new {PhoneNumber = HttpContext.GetPhoneNumber()}); // using allocated phone number
   }
 }
 ```

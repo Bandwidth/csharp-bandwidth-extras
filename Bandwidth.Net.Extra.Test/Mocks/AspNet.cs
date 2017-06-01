@@ -299,4 +299,19 @@ namespace Bandwidth.Net.Extra.Test.Mocks
         {
         }
     }
+
+    public class MockServiceProvider : IServiceProvider
+    {
+        
+        private readonly IInvocationContext<IServiceProvider> _context;
+        public MockServiceProvider(IInvocationContext<IServiceProvider> context)
+        {
+          _context = context;
+        }
+
+        public object GetService(Type serviceType)
+        {
+            return _context.Invoke(i => i.GetService(serviceType));
+        }
+    }
 }

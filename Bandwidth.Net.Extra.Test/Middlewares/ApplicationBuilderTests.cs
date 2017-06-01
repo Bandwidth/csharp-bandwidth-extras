@@ -342,6 +342,58 @@ namespace Bandwidth.Net.Extra.Test.Middlewares
           }
         }
 
+        [Fact]
+        public void GetServiceTest()
+        {
+          var context = new MockContext<IServiceProvider>();
+          var serviceProvider = new MockServiceProvider(context);
+          context.Arrange(s => s.GetService(typeof(int))).Returns(1);
+          Assert.Equal(1, serviceProvider.GetService<int>());
+        }
+
+        [Fact]
+        public void GetRequestServiceTest()
+        {
+          var context = new MockContext<IServiceProvider>();
+          var serviceProvider = new MockServiceProvider(context);
+          var httpContext = new MockHttpContext
+          {
+            RequestServices = serviceProvider
+          };
+          context.Arrange(s => s.GetService(typeof(int))).Returns(10);
+          Assert.Equal(10, httpContext.GetRequestService<int>());
+        }
+
+        [Fact]
+        public void GetApplicationIdTest()
+        {
+          var httpContext = new MockHttpContext
+          {
+            Items = new Dictionary<object, object>{{"ApplicationId", "appId"}}
+          };
+          Assert.Equal("appId", httpContext.GetApplicationId());
+        }
+
+        [Fact]
+        public void GetDomainIdTest()
+        {
+          var httpContext = new MockHttpContext
+          {
+            Items = new Dictionary<object, object>{{"DomainId", "domainId"}}
+          };
+          Assert.Equal("domainId", httpContext.GetDomainId());
+        }
+
+        [Fact]
+        public void GetPhoneNumberTest()
+        {
+          var httpContext = new MockHttpContext
+          {
+            Items = new Dictionary<object, object>{{"PhoneNumber", "+1234567890"}}
+          };
+          Assert.Equal("+1234567890", httpContext.GetPhoneNumber());
+        }
+
         public class MockContexts
         {
           public MockContext<IMemoryCache> MemoryCache = new MockContext<IMemoryCache>();

@@ -97,9 +97,9 @@ namespace Bandwidth.Net.Extra
     /// }
     /// </code>
     /// Now you can use in any route handler: 
-    /// Context.items["PhoneNumber"] - allocated phone number which events will be handled by this app
-    /// Context.items["ApplicationId"] - application Id of Bandwidth application
-    /// Context.items["DomainId"] - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.
+    /// Context.items["PhoneNumber"] or Context.GetPhoneNumber() - allocated phone number which events will be handled by this app
+    /// Context.items["ApplicationId"] or Context.GetApplicationId() - application Id of Bandwidth application
+    /// Context.items["DomainId"]  or Context.GetDomainId() - domain Id of your SIP domain on Banwidth server. You can use it to manage sip endpoints.
     /// </example>
     /// <example>
     /// Event handler as dictionary
@@ -162,6 +162,56 @@ namespace Bandwidth.Net.Extra
       builder.AddRouteHandler(ApplicationExtensions.CallCallbackPath, options.CallCallback);
       builder.AddRouteHandler(ApplicationExtensions.MessageCallbackPath, options.MessageCallback);
       return builder;
+    }
+
+    /// <summary>
+    /// Gets the service object of the specified type.
+    /// </summary>
+    /// <param name="provider"> Service provider</param>
+    /// <returns>Service instance</returns>
+    public static T GetService<T>(this IServiceProvider provider)
+    {
+      return (T)provider.GetService(typeof(T));
+    }
+
+    /// <summary>
+    /// Gets the service object of the specified type using request service providers.
+    /// </summary>
+    /// <param name="context">Http context</param>
+    /// <returns>Service instance</returns>
+    public static T GetRequestService<T>(this HttpContext context)
+    {
+      return context.RequestServices.GetService<T>();
+    }
+
+    /// <summary>
+    /// Return application id (on Banwidth server)
+    /// </summary>
+    /// <param name="context">Http context</param>
+    /// <returns>Application Id</returns>
+    public static string GetApplicationId(this HttpContext context)
+    {
+      return (string)context.Items["ApplicationId"];
+    }
+
+    /// <summary>
+    /// Return sip domain id (on Banwidth server)
+    /// </summary>
+    /// <param name="context">Http context</param>
+    /// <returns>Domain Id</returns>
+    public static string GetDomainId(this HttpContext context)
+    {
+      return (string)context.Items["DomainId"];
+    }
+
+    /// <summary>
+    /// Return aloocated phone number
+    /// </summary>
+    /// <param name="context">Http context</param>
+    /// <returns>Phone number</returns>
+    public static string GetPhoneNumber(this HttpContext context)
+    {
+      return (string)context.Items["PhoneNumber"];
     }
 
     private static void AddRouteHandler(this IApplicationBuilder builder, string route, Func<CallbackEvent, HttpContext, Task> handler) 
