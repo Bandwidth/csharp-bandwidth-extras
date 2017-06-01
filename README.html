@@ -116,7 +116,7 @@ var number = await client.PhoneNumber.GetOrCreateAsync(client.AvailableNumber, a
       });
    }
 }
-</code></pre><p>Now in you contollers you can use any <code>Bandwidth.Net</code> interface and <code>Client</code> instance via DI. Also <code>HttpContext.Items[&quot;ApplicationId&quot;]</code> will return application id on Bandwidth server, <code>HttpContext.Items[&quot;PhoneNumber&quot;]</code> will return allocated phone number.</p>
+</code></pre><p>Now in you contollers you can use any <code>Bandwidth.Net</code> interface and <code>Client</code> instance via DI. Also <code>HttpContext.Items[&quot;ApplicationId&quot;]</code> or <code>HttpContext.GetApplicationId()</code> will return application id on Bandwidth server, <code>HttpContext.Items[&quot;PhoneNumber&quot;]</code> or <code>HttpContext.GetPhoneNumber()</code> will return allocated phone number.</p>
 <pre><code class="lang-csharp">public class MyController: Controller
 {
   public MyController(ICall call) // via Dependency Injection
@@ -126,7 +126,7 @@ var number = await client.PhoneNumber.GetOrCreateAsync(client.AvailableNumber, a
 
   public IActionResult MyAction()
   {
-    return Json(new {PhoneNumber = HttpContext.Items[&quot;PhoneNumber&quot;]}); // using allocated phone number
+    return Json(new {PhoneNumber = HttpContext.GetPhoneNumber()}); // using allocated phone number
   }
 }
 </code></pre>

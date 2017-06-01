@@ -94,6 +94,72 @@ references:
   commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth
   fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.AddBandwidth
   nameWithType: AspNetCoreExtensions.AddBandwidth
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetApplicationId(HttpContext)
+  name: GetApplicationId(HttpContext)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetApplicationId_HttpContext_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.GetApplicationId(HttpContext)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetApplicationId(HttpContext)
+  nameWithType: AspNetCoreExtensions.GetApplicationId(HttpContext)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetApplicationId*
+  name: GetApplicationId
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetApplicationId_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.GetApplicationId
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetApplicationId
+  nameWithType: AspNetCoreExtensions.GetApplicationId
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetDomainId(HttpContext)
+  name: GetDomainId(HttpContext)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetDomainId_HttpContext_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.GetDomainId(HttpContext)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetDomainId(HttpContext)
+  nameWithType: AspNetCoreExtensions.GetDomainId(HttpContext)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetDomainId*
+  name: GetDomainId
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetDomainId_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.GetDomainId
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetDomainId
+  nameWithType: AspNetCoreExtensions.GetDomainId
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetPhoneNumber(HttpContext)
+  name: GetPhoneNumber(HttpContext)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetPhoneNumber_HttpContext_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.GetPhoneNumber(HttpContext)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetPhoneNumber(HttpContext)
+  nameWithType: AspNetCoreExtensions.GetPhoneNumber(HttpContext)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetPhoneNumber*
+  name: GetPhoneNumber
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetPhoneNumber_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.GetPhoneNumber
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetPhoneNumber
+  nameWithType: AspNetCoreExtensions.GetPhoneNumber
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService*
+  name: GetRequestService
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetRequestService_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService
+  nameWithType: AspNetCoreExtensions.GetRequestService
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService``1(HttpContext)
+  name: GetRequestService<T>(HttpContext)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetRequestService__1_HttpContext_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService``1(HttpContext)
+  name.vb: GetRequestService(Of T)(HttpContext)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService<T>(HttpContext)
+  fullName.vb: Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService(Of T)(HttpContext)
+  nameWithType: AspNetCoreExtensions.GetRequestService<T>(HttpContext)
+  nameWithType.vb: AspNetCoreExtensions.GetRequestService(Of T)(HttpContext)
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService*
+  name: GetService
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetService_
+  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.GetService
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService
+  nameWithType: AspNetCoreExtensions.GetService
+- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService``1(IServiceProvider)
+  name: GetService<T>(IServiceProvider)
+  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetService__1_IServiceProvider_
+  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.GetService``1(IServiceProvider)
+  name.vb: GetService(Of T)(IServiceProvider)
+  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService<T>(IServiceProvider)
+  fullName.vb: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService(Of T)(IServiceProvider)
+  nameWithType: AspNetCoreExtensions.GetService<T>(IServiceProvider)
+  nameWithType.vb: AspNetCoreExtensions.GetService(Of T)(IServiceProvider)
 - uid: Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder,BandwidthOptions)
   name: UseBandwidth(IApplicationBuilder, BandwidthOptions)
   href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_BandwidthOptions_
