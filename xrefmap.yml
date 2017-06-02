@@ -145,21 +145,6 @@ references:
   fullName.vb: Bandwidth.Net.Extra.AspNetCoreExtensions.GetRequestService(Of T)(HttpContext)
   nameWithType: AspNetCoreExtensions.GetRequestService<T>(HttpContext)
   nameWithType.vb: AspNetCoreExtensions.GetRequestService(Of T)(HttpContext)
-- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService*
-  name: GetService
-  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetService_
-  commentId: Overload:Bandwidth.Net.Extra.AspNetCoreExtensions.GetService
-  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService
-  nameWithType: AspNetCoreExtensions.GetService
-- uid: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService``1(IServiceProvider)
-  name: GetService<T>(IServiceProvider)
-  href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_GetService__1_IServiceProvider_
-  commentId: M:Bandwidth.Net.Extra.AspNetCoreExtensions.GetService``1(IServiceProvider)
-  name.vb: GetService(Of T)(IServiceProvider)
-  fullName: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService<T>(IServiceProvider)
-  fullName.vb: Bandwidth.Net.Extra.AspNetCoreExtensions.GetService(Of T)(IServiceProvider)
-  nameWithType: AspNetCoreExtensions.GetService<T>(IServiceProvider)
-  nameWithType.vb: AspNetCoreExtensions.GetService(Of T)(IServiceProvider)
 - uid: Bandwidth.Net.Extra.AspNetCoreExtensions.UseBandwidth(IApplicationBuilder,BandwidthOptions)
   name: UseBandwidth(IApplicationBuilder, BandwidthOptions)
   href: api/Bandwidth.Net.Extra.AspNetCoreExtensions.html#Bandwidth_Net_Extra_AspNetCoreExtensions_UseBandwidth_IApplicationBuilder_BandwidthOptions_
