@@ -164,15 +164,6 @@ namespace Bandwidth.Net.Extra
       return builder;
     }
 
-    /// <summary>
-    /// Gets the service object of the specified type.
-    /// </summary>
-    /// <param name="provider"> Service provider</param>
-    /// <returns>Service instance</returns>
-    public static T GetService<T>(this IServiceProvider provider)
-    {
-      return (T)provider.GetService(typeof(T));
-    }
 
     /// <summary>
     /// Gets the service object of the specified type using request service providers.

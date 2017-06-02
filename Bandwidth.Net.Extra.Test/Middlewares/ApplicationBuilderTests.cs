@@ -343,15 +343,6 @@ namespace Bandwidth.Net.Extra.Test.Middlewares
         }
 
         [Fact]
-        public void GetServiceTest()
-        {
-          var context = new MockContext<IServiceProvider>();
-          var serviceProvider = new MockServiceProvider(context);
-          context.Arrange(s => s.GetService(typeof(int))).Returns(1);
-          Assert.Equal(1, serviceProvider.GetService<int>());
-        }
-
-        [Fact]
         public void GetRequestServiceTest()
         {
           var context = new MockContext<IServiceProvider>();
